@@ -1,0 +1,12 @@
+{
+  "domain": "equilab",
+  "name": "Equilab",
+  "version": "0.0.5",
+  "config_flow": true,
+  "codeowners": ["@Danw33"],
+  "documentation": "https://github.com/Danw33/ha-equilab",
+  "issue_tracker": "https://github.com/Danw33/ha-equilab/issues",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": ["equilab==0.1.1"]
+}

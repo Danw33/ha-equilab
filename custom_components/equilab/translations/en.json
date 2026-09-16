@@ -1,0 +1,45 @@
+{
+  "title": "Equilab",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Equilab",
+        "description": "Unofficial read-only integration. Sign in with your Equilab account. Your password is not stored; a refresh token is saved in Home Assistant.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Equilab",
+        "description": "Sign in again with the same Equilab account.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid credentials or account disabled.",
+      "access_denied": "Equilab denied access to the account document.",
+      "cannot_connect": "Unable to connect to Equilab. Try again later.",
+      "rate_limited": "Equilab is rate limiting requests. Wait before retrying."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "wrong_account": "Sign in with the account originally configured.",
+      "reauth_successful": "Reauthentication successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Default sync interval",
+        "description": "Default interval for horses and riders without a per-device override. Configure each device using its Sync interval entity. Groups default to daily. Changing this setting does not reset device overrides.",
+        "data": {
+          "poll_minutes": "Default interval (minutes, 15\u20131440)"
+        }
+      }
+    }
+  }
+}
