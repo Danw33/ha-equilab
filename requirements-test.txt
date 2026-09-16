@@ -1,4 +1,4 @@
-homeassistant==2025.12.0
+homeassistant==2026.9.2
 equilab==0.1.1
 pycares<5
 pytest==9.1.1
