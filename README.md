@@ -3,6 +3,7 @@
 [![CI](https://github.com/Danw33/ha-equilab/actions/workflows/ci.yml/badge.svg)](https://github.com/Danw33/ha-equilab/actions/workflows/ci.yml)
 [![Validate](https://github.com/Danw33/ha-equilab/actions/workflows/validate.yml/badge.svg)](https://github.com/Danw33/ha-equilab/actions/workflows/validate.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FDanw33%2Fha-equilab%2Frefs%2Fheads%2Fmain%2Fpyproject.toml)
 
 **Unofficial**, read-only alpha integration for Equilab email/password accounts.
 Includes horse, authenticated rider and account-linked stable/group devices.
