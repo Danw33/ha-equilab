@@ -92,7 +92,7 @@ class EquilabCoordinator(DataUpdateCoordinator):
             if key not in cache:
                 try:
                     cache[key] = await self.client.async_get_training(key)
-                except (MissingError, AccessError):
+                except MissingError, AccessError:
                     cache[key] = None
             data = cache[key]
             if data is None or data.get(field) != identifier:
@@ -143,7 +143,7 @@ class EquilabCoordinator(DataUpdateCoordinator):
                     try:
                         notifications = await self.client.async_get_latest_notification()
                         inbox_missing = False
-                    except (MissingError, AccessError):
+                    except MissingError, AccessError:
                         notifications, inbox_missing = [], True
                     self.profiles[key] = rider_from_data(
                         self.client.uid, user, trainings, skipped, notifications

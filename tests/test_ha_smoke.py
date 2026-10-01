@@ -24,6 +24,7 @@ async def test_component_setup_entities_and_unload(tmp_path):
     hass.config_entries = ConfigEntries(hass, {})
     await hass.config_entries.async_initialize()
     await area_registry.async_load(hass)
+    device_registry.async_setup(hass)
     await device_registry.async_load(hass)
     await entity_registry.async_load(hass)
     hass.auth = await auth.auth_manager_from_config(hass, [], [])

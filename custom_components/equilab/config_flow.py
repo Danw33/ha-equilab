@@ -51,7 +51,7 @@ class EquilabConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 await client.async_get_user()
             except AuthError:
                 errors["base"] = "invalid_auth"
-            except (AccessError, MissingError):
+            except AccessError, MissingError:
                 errors["base"] = "access_denied"
             except RateLimitError:
                 errors["base"] = "rate_limited"

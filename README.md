@@ -9,7 +9,7 @@
 Includes horse, authenticated rider and account-linked stable/group devices.
 This is not an official Equilab API, HACS listing or certified HA Quality Scale
 integration. Maintained by [Daniel Wilson](https://github.com/Danw33) ([danw.io](https://danw.io)). Tested with
-HA Core 2025.12.0 and Python 3.13.9 using synthetic cloud responses. Cloud access
+HA Core 2026.9.4 and Python 3.14 using synthetic cloud responses. Cloud access
 and domain normalisation are provided by the separately versioned, typed
 [`equilab`](https://github.com/Danw33/py-equilab) distribution (imported as
 `pyequilab`).
@@ -164,7 +164,7 @@ An HTTP 429 is still surfaced as an upstream rate-limit error.
 ## Validation and development
 
 See VALIDATION.md for exact tests and limitations. No cloud credentials were used
-for automated tests. Python 3.13 and HA Core 2025.12.0 are the tested runtime.
+for automated tests. Python 3.14 and HA Core 2026.9.4 are the tested runtime.
 
 ```sh
 python -m pip install -r requirements-test.txt

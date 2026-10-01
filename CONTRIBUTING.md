@@ -14,7 +14,7 @@ Thank you for helping improve this unofficial Equilab integration for Home Assis
 
 ## Local checks
 
-Use Python 3.13 and run:
+Use Python 3.14 and run:
 
 ```sh
 python -m pip install -r requirements-test.txt
