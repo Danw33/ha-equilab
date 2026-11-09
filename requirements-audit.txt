@@ -1,0 +1,3 @@
+# Keep Home Assistant aligned with requirements-test.txt and client pins with manifest.json.
+homeassistant==2026.11.0
+equilab==0.1.1
