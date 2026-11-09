@@ -9,7 +9,7 @@ from unittest.mock import AsyncMock, patch
 from homeassistant import auth, loader
 from homeassistant.config_entries import ConfigEntries, ConfigEntry, ConfigEntryState
 from homeassistant.core import HomeAssistant
-from homeassistant.helpers import area_registry, device_registry, entity_registry
+from homeassistant.helpers import area_registry, device_registry, entity_registry, frame
 from pyequilab import EquilabClient
 
 
@@ -21,6 +21,7 @@ async def test_component_setup_entities_and_unload(tmp_path):
     hass = HomeAssistant(str(tmp_path))
     hass.config.time_zone = "Europe/London"
     loader.async_setup(hass)
+    frame.async_setup(hass)
     hass.config_entries = ConfigEntries(hass, {})
     await hass.config_entries.async_initialize()
     await area_registry.async_load(hass)
@@ -190,3 +191,4 @@ async def test_component_setup_entities_and_unload(tmp_path):
             await hass.async_block_till_done()
     finally:
         await hass.async_stop(force=True)
+        frame.async_setup(None)
