@@ -14,7 +14,8 @@ Thank you for helping improve this unofficial Equilab integration for Home Assis
 
 ## Local checks
 
-Use Python 3.14 and run:
+Use Python 3.14. Upgrade `homeassistant` and `pytest-homeassistant` together so
+the test package supplies the pytest versions expected by Home Assistant. Run:
 
 ```sh
 python -m pip install -r requirements-test.txt
