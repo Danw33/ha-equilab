@@ -1,6 +1,6 @@
-homeassistant==2026.11.1
+homeassistant==2026.11.2
 equilab==0.1.1
-pytest-homeassistant==2026.11.1
+pytest-homeassistant==2026.11.2
 pytest-cov==7.1.0
 aioresponses-ng==0.8.2
 ruff==0.17.5
